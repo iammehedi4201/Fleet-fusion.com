@@ -1,0 +1,39 @@
+
+.img-1{
+    width: 100px;
+}
+.img-2{
+    width: 100px;
+}
+.img-3{
+    width: 100px;
+}
+
+.booking-form-section
+{
+   border: 1px solid black;
+   padding: 40px;
+}
+
+
+@media screen and (max-width:410px) {
+    .booking-process-section{
+        width: 100%;
+    }
+    .booking-card-sizing{
+
+        width: 100%!important;
+        padding: 0px!important;
+    
+    }
+
+    .img-1{
+        width: 100%;
+    }
+    .img-2{
+        width: 100%;
+    }
+    .img-3{
+        width: 100%;
+    }      
+}

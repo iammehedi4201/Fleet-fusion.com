@@ -1,0 +1,16 @@
+.tm-section{
+    margin: 20px auto;
+}
+
+.tm-img-sizing{
+
+    width:100%;
+    height:40vh;
+
+}
+.tm-card-sizing{
+    width: 60%;
+    padding: 10px;
+    margin: 0px auto;
+}
+

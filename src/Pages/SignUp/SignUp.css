@@ -1,0 +1,11 @@
+.register-section{
+    margin-top: 250px;
+}
+
+.bg-color{
+    background:
+    linear-gradient(
+    rgba(35,43,85,0.75),
+    rgba(35,43,85,0.95))!important;
+    color: white!important;
+}

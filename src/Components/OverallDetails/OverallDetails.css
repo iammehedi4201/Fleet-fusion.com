@@ -1,0 +1,14 @@
+.overdetails-section{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("./img/tuna-ekici-0xySZZ8OK1o-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.h1-style{
+    font-size: 100px!important;
+}

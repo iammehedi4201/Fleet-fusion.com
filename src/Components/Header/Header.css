@@ -1,0 +1,236 @@
+a{
+    text-decoration: none!important;
+}
+.header-section{
+  width: 100%;
+  position: fixed;
+  z-index:99999;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+    
+}
+.top-navbar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    width: 100%;
+    padding: 5px;
+    background-color:rgb(244, 242, 242);
+    z-index: 1;
+  
+}
+.bottom-navbar-section{
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: #6c757d;
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.btn-style{
+
+    margin: 0px 20px;
+  
+}
+
+.profile-section{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+.profile-img{
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.logout-btn-style{
+    display: flex;
+    justify-content: center;
+}
+
+.img-sizing{
+    width: 100%;
+ }
+ .navbar{
+     padding: 10px!important;
+    
+ }
+ .navbar-brand{
+     padding: 0px!important;
+     width: 30%;
+    
+ }
+ .offcanvas {
+     position: fixed;
+     bottom: 0;
+     z-index: var(--bs-offcanvas-zindex);
+     display: flex;
+     flex-direction: column;
+     max-width: 100%;
+     color: white!important;
+     visibility: hidden;
+     background-color: #2e3047!important;
+     background-clip: padding-box;
+     outline: 0;
+     transition: transform .3s ease-in-out;
+ }
+ .offcanvas-header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+ }
+ .btn-close {
+     box-sizing: content-box;
+     width: 1em;
+     height: 1em;
+     padding: 0.25em 0.25em;
+     border: 0;
+     background-color: aqua!important;
+     border-radius: 0.375rem;
+     opacity: .5;
+ }
+ .nav-link{
+ 
+    margin-right: 30px;    
+ 
+ }
+ .navbar-logo{
+    display: none;
+ }
+ .login-info{
+     margin-left:-200px;
+     text-align: center;
+ }
+ .sidebar-display{
+    display: none;
+ }
+
+ @media (max-width: 480px) {
+
+    .top-navbar{
+        display: inline-block;
+        min-height: 10vh;
+    }
+
+    .img-sizing{
+        width: 100%;
+     }
+     .btn-style{
+
+         margin: 0px 20px;
+       
+     }
+
+     .btn-div{
+        justify-content: center;
+     }
+     .nav{
+        justify-content: center;
+     }
+    
+  }
+
+  @media (max-width: 574px)
+  {
+     .navbar-logo{
+        display: block;
+     }
+     .top-navbar-logo{
+        display: none;
+     }
+     .login-info{
+        margin-left:0px;
+    }
+    .sidebar h2 {
+		color: #e7e8ef;
+		font-size:1rem;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+		text-align: center;
+	}
+     /* this for the aside getting in navbar that's when i use mobile phone the website */
+	.content {
+		padding-top: 8rem;
+	}
+	.sidebar {
+        display: block;
+		min-height: 100vh;
+		max-width:100%;
+		transition: 0.2s linear;
+        
+	}
+
+    .sidebar .menu .menu-item {
+        display: block;
+        padding: 10px 0px;
+        color: #FFF;
+        text-decoration: none;
+        transition: 0.2s linear;
+    }
+
+	.sidebar.is-active {
+		left: 0;
+	}
+	
+  }
+ 
+  /* loader css */
+
+  .header-style{
+    font-size: 48px;
+    color: steelblue;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    position: relative;
+  }
+  .header-style:before{
+    content: '';
+    animation: 5s print linear alternate infinite;
+  }
+  .header-style:after{
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translatey(-45%);
+    width: 2px;
+    height: 1.3em;
+    background: currentColor;
+    opacity: 0.8;
+    animation: 1s blink steps(2) infinite;
+  }
+  
+  @keyframes blink {
+    0%  { visibility: hidden;}
+    100%  { visibility: visible;}
+  }
+  @keyframes print {
+    0% { content: ''}
+    10% { content: 'Welcome'}
+    20% { content: 'Welcome'}
+    30% { content: 'Welcome'}
+    40% { content: 'Welcome T'}
+    50% { content: 'Welcome To'}
+    60% { content: 'Welcome To F'}
+    70% { content: 'Welcome To Fleet'}
+    80% { content: 'Welcome To Fleet-'}
+    90% , 100% { content: 'Welcome To Fleet-Fusion'}
+  }
